@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.container input,
+.container select,
+.container button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.container input,
+.container select {
+  border: 1px solid #736565;
+}
+
+.container button {
+  cursor: pointer;
+  border: none;
+  background-color: #f18053;
+  color: white;
+}
+
+.container button:hover {
+  background-color: #5ba6f6;
+}
+
+.message-box {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.book_list {
+  height: 200px;
+  overflow-y: auto;
+
+  border: 1px solid #736565;
+  background-color: #f9f9f9;
+
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.container,
+.summary-box {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.summary-box {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+@media (min-width: 900px) {
+  .container,
+  .summary-box {
+    width: 45%;
+  }
+}
+ 

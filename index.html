@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Borrowing System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <body>
+  <img src="bc-img.jpg" alt="Library Image" class="background-image">
+
+  <div class="main-wrapper">
+    <!-- Left: Form container -->
+    <div class="container">
+      <h1>Library Borrowing System</h1>
+
+      <label for="student-id">Student ID:</label>
+      <input type="text" id="student-id" placeholder="Enter student ID" required>
+
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" placeholder="Enter student name" required>
+
+      <label for="book-select">Select Book:</label>
+      <select id="book-select"></select>
+
+      <label for="new-book">Add New Book:</label>
+      <input type="text" id="new-book" placeholder="Type new book name and press Add">
+
+      <button onclick="addNewBook()">Add to Book List</button>
+      <button onclick="addBook()">Add Book</button>
+      <button onclick="finalizeStudent()">Finalize This Student</button>
+      <button onclick="showSummary()">Done</button>
+
+      <div id="message" class="message-box"></div>
+    </div>
+
+    <!-- Right: Summary block -->
+    <div class="summary-box">
+      <h2>Borrowed Books Summary</h2>
+      <div id="summary"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</body>
+</html>
